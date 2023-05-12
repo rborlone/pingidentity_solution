@@ -9,13 +9,16 @@ ROOT_USER_DN=cn=dmanager
 # Default to /usr/local/secret to be passed via docker secrets
 # Retrieve from a vault ideally instead of this
 # NOTE: use ${BASE} in case the image was rebased
-ROOT_USER_PASSWORD_FILE=${BASE}/staging/pwd
+#ROOT_USER_PASSWORD_FILE=${BASE}/staging/pwd
+ROOT_USER_PASSWORD_FILE=/opt/staging/pwd
 
 # The replication administration user DN may be provided (Default: admin)
 # ADMIN_USER_NAME=yourReplicationUserHere
 
 # The replication administrator password file
-ADMIN_USER_PASSWORD_FILE=${ROOT_USER_PASSWORD_FILE}
+#ADMIN_USER_PASSWORD_FILE=${ROOT_USER_PASSWORD_FILE}
+ADMIN_USER_PASSWORD_FILE=/opt/staging/pwd
+
 
 # The user base dn may be provided (Default: dc=example,dc=com)
 # USER_BASE_DN=dc=customer360.com
@@ -31,7 +34,8 @@ CERTIFICATE_NICKNAME=server-cert
 
 # The encryption passphase to use
 # This is critical to allow encryption across replicated server and MUST be provided
-ENCRYPTION_PASSWORD_FILE=${ROOT_USER_PASSWORD_FILE}
+#ENCRYPTION_PASSWORD_FILE=${ROOT_USER_PASSWORD_FILE}
+ENCRYPTION_PASSWORD_FILE=/opt/staging/pwd
 
 # whitespace-separated list of the log files to tail on the container's standard output
 # This is optional and will default to tailing access log
