@@ -5,7 +5,7 @@ PF_LOG_LEVEL=DEBUG
 
 # PD User BASE DN
 # Used when PD starts up to create the User Store
-USER_BASE_DN=dc=aplaplac.cl
+USER_BASE_DN=dc=customer360.com
 
 # PF Admin Password
 # Note - this should match `pfAdminPwd` in postman_vars.json
