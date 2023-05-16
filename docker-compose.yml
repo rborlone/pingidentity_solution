@@ -12,7 +12,7 @@ services:
     - SERVER_PROFILE_PATH=profiles/pingfederate
     
     volumes:
-    - /root/pingidentity_solution/licenses/licencias/PingFederate.lic:/opt/out/instance/server/default/conf/pingfederate.lic 
+    - /root/pingidentity_solution/licencias/licencias/PingFederate.lic:/opt/out/instance/server/default/conf/pingfederate.lic 
     #  - ${HOME}/projects/devops/volumes/full-stack.pingfederate:/opt/out
     #  - ${HOME}/projects/devops/pingidentity-server-profiles/baseline/pingfederate:/opt/in
     networks:
@@ -33,7 +33,7 @@ services:
     - SERVER_PROFILE_PATH=profiles/pingdirectory
 
     volumes:
-    - /root/pingidentity_solution/licenses/licencias/PingDirectory.lic:/opt/in/pd.profile/server-root/pre-setup/PingDirectory.lic 
+    - /root/pingidentity_solution/licencias/licencias/PingDirectory.lic:/opt/in/pd.profile/server-root/pre-setup/PingDirectory.lic 
     #volumes:
     #  - ${HOME}/projects/devops/volumes/full-stack.pingdirectory:/opt/out
     #  - ${HOME}/projects/devops/pingidentity-server-profiles/baseline/pingdirectory:/opt/in
